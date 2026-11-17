@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlightFix | Technical log</title>
+  <meta name="description" content="FlightFix: aircraft maintenance planning, work orders, spare parts and ERP hand-off.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e8590c'/%3E%3Cpath d='M6 22 L16 8 L26 22 L16 18Z' fill='%231b1a17'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="log-head">
+    <a class="brand" href="#/dashboard" aria-label="FlightFix home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32"/><path d="M6 22 L16 8 L26 22 L16 18Z"/></svg>
+      <span><b>FlightFix</b><small>Technical log &middot; Line &amp; base maintenance</small></span>
+    </a>
+    <p class="date" id="today"></p>
+  </header>
+  <nav class="tabs" id="nav" aria-label="Sections">
+    <a href="#/dashboard">Fleet board</a><a href="#/plan">Plan</a><a href="#/orders">Job cards</a>
+    <a href="#/parts">Stores</a><a href="#/tech">Technician</a><a href="#/erp">ERP ledger</a>
+  </nav>
+  <main id="view" tabindex="-1"></main>
+  <footer class="foot">FlightFix 1.0 &middot; Learning project, not certified maintenance-records software.</footer>
+  <dialog id="dlg"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
